@@ -217,7 +217,7 @@ footer {
 }
 
 .footer__logo {
-  filter: invert(22%) sepia(5%) saturate(5405%) hue-rotate(117deg) brightness(98%) contrast(75%);
+  filter: invert(35%) sepia(19%) saturate(1200%) hue-rotate(118deg) brightness(103%) contrast(88%);
   width: 150px;
 }
 
