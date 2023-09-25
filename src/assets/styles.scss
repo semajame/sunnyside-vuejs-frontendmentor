@@ -31,6 +31,12 @@ a {
   color: $dark-grayish-blue;
 }
 
+@mixin flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   background-color: transparent;
   display: flex;
@@ -170,16 +176,7 @@ main {
   @extend .learn__more;
 
   &::before {
-    z-index: -1;
-    border-radius: 10px;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 6px;
     background-color: hsla(5, 99%, 70%, 0.541);
-    bottom: 0;
-    left: 0;
-    margin-bottom: 2px;
   }
 }
 
@@ -224,9 +221,7 @@ main {
 }
 
 .client__box__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex();
   margin-top: 5rem;
   gap: 4rem;
   text-align: center;
@@ -259,11 +254,9 @@ main {
 // FOOTER
 
 footer {
+  @include flex();
   text-align: center;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
   padding: 5rem 0;
   background-color: #90d4c5;
 }
@@ -296,9 +289,7 @@ footer {
 }
 
 .socials__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex();
 
   a {
     padding: 0 1rem;
@@ -453,7 +444,6 @@ footer {
     }
 
     p {
-      margin: 2rem 0;
       line-height: 20px;
       font-size: 0.925rem;
     }

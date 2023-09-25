@@ -129,16 +129,7 @@ main button img {
 }
 
 .learn__more__standout::before {
-  z-index: -1;
-  border-radius: 10px;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 6px;
   background-color: hsla(5, 99%, 70%, 0.541);
-  bottom: 0;
-  left: 0;
-  margin-bottom: 2px;
 }
 
 .graphic__container,
@@ -179,8 +170,8 @@ main button img {
 
 .client__box__container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
   margin-top: 5rem;
   gap: 4rem;
   text-align: center;
@@ -207,11 +198,11 @@ main button img {
 }
 
 footer {
-  text-align: center;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  text-align: center;
+  flex-direction: column;
   padding: 5rem 0;
   background-color: #90d4c5;
 }
@@ -241,8 +232,8 @@ footer {
 
 .socials__container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .socials__container a {
   padding: 0 1rem;
@@ -371,7 +362,6 @@ footer {
     line-height: 30px;
   }
   .white__section p {
-    margin: 2rem 0;
     line-height: 20px;
     font-size: 0.925rem;
   }
