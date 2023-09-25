@@ -354,9 +354,6 @@ footer {
   }
 }
 @media screen and (max-width: 420px) {
-  .white__section {
-    padding: 3rem;
-  }
   .white__section h2 {
     font-size: 2rem;
     line-height: 30px;
