@@ -18,7 +18,7 @@
       </div>
 
       <div class="mobile__right__header">
-        <nav v-if="header" id="nav">
+        <nav :class="{ active: nav }">
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -51,7 +51,7 @@ export default {
       iconLogo: require('@/assets/images/logo.svg'),
       iconMenu: require('@/assets/images/icon-hamburger.svg'),
       arrowDown: require('@/assets/images/icon-arrow-down.svg'),
-      header: false,
+      nav: false,
     };
   },
 
@@ -65,7 +65,7 @@ export default {
     },
 
     toggleMenu() {
-      this.header = !this.header;
+      this.nav = !this.nav;
     },
   },
 };

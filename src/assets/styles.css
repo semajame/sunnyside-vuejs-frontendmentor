@@ -273,7 +273,7 @@ footer {
   .mobile__right__header nav {
     position: absolute;
     padding: 2rem 0;
-    top: 7rem;
+    top: -20rem;
     left: 5%;
     right: 5%;
     background-color: hsl(0, 0%, 100%);
@@ -281,20 +281,28 @@ footer {
     -webkit-clip-path: polygon(95% 5%, 100% 0, 100% 100%, 0 100%, 0 5%);
             clip-path: polygon(95% 5%, 100% 0, 100% 100%, 0 100%, 0 5%);
   }
-  .mobile__right__header nav ul {
+  .mobile__right__header nav ul li {
+    list-style-type: none;
+  }
+  .mobile__right__header nav.active {
+    top: 5rem;
+    left: 5%;
+    right: 5%;
+  }
+  .mobile__right__header nav.active ul {
     flex-direction: column;
     padding: 0;
   }
-  .mobile__right__header nav ul li {
+  .mobile__right__header nav.active ul li {
     list-style-type: none;
     padding: 1rem 0;
   }
-  .mobile__right__header nav ul a {
+  .mobile__right__header nav.active ul a {
     color: hsl(210, 4%, 67%);
     font-size: 1.2rem;
     text-decoration: none;
   }
-  .mobile__right__header nav ul .contact {
+  .mobile__right__header nav.active ul .contact {
     padding: 1rem 1.5rem;
     border-radius: 30px;
     background-color: hsl(0, 0%, 100%);

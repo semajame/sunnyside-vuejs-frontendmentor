@@ -335,12 +335,25 @@ footer {
     nav {
       position: absolute;
       padding: 2rem 0;
-      top: 7rem;
+      top: -20rem;
       left: 5%;
       right: 5%;
       background-color: $white;
       text-align: center;
       clip-path: polygon(95% 5%, 100% 0, 100% 100%, 0 100%, 0 5%);
+
+      ul {
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+
+    nav.active {
+      top: 5rem;
+      left: 5%;
+      right: 5%;
+
       ul {
         flex-direction: column;
         padding: 0;
@@ -352,6 +365,7 @@ footer {
 
         a {
           color: $grayish-blue;
+
           font-size: 1.2rem;
           text-decoration: none;
         }
