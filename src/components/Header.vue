@@ -9,9 +9,9 @@
       <div class="right__header">
         <nav>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
+            <li v-for="(items, index) in navContent" :key="index">
+              <a href="#"> {{ items.pages }}</a>
+            </li>
             <li><a href="#" class="contact">Contact</a></li>
           </ul>
         </nav>
@@ -20,9 +20,9 @@
       <div class="mobile__right__header">
         <nav :class="{ active: nav }">
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
+            <li v-for="(items, index) in navContent" :key="index">
+              <a href="#">{{ items.pages }}</a>
+            </li>
             <li><a href="#" class="contact">Contact</a></li>
           </ul>
         </nav>
@@ -52,6 +52,18 @@ export default {
       iconMenu: require('@/assets/images/icon-hamburger.svg'),
       arrowDown: require('@/assets/images/icon-arrow-down.svg'),
       nav: false,
+
+      navContent: [
+        {
+          pages: 'About',
+        },
+        {
+          pages: 'Services',
+        },
+        {
+          pages: 'Projects',
+        },
+      ],
     };
   },
 
